@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="0409cdee-c68d-48c7-bff6-0778ffc7b447" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.ObjectModel.ObservableCollection`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>false</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:5729/EmployeeNew.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="EmployeeNew.xsd" MetadataType="Schema" ID="dadf3ee7-fbff-4b45-87d9-db966e9c12ba" SourceId="1" SourceUrl="http://localhost:5729/EmployeeNew.svc?xsd=xsd1" />
+    <MetadataFile FileName="EmployeeNew1.xsd" MetadataType="Schema" ID="fdf72dcf-1e5f-44ac-989d-97df1ffc0036" SourceId="1" SourceUrl="http://localhost:5729/EmployeeNew.svc?xsd=xsd2" />
+    <MetadataFile FileName="EmployeeNew.disco" MetadataType="Disco" ID="2f75c37f-ef33-4b71-8059-0f7304791569" SourceId="1" SourceUrl="http://localhost:5729/EmployeeNew.svc?disco" />
+    <MetadataFile FileName="EmployeeNew2.xsd" MetadataType="Schema" ID="71cd9004-1bea-418e-b9a1-c47d4b87bf30" SourceId="1" SourceUrl="http://localhost:5729/EmployeeNew.svc?xsd=xsd0" />
+    <MetadataFile FileName="EmployeeNew.wsdl" MetadataType="Wsdl" ID="b51505e9-f971-4c01-8f54-24a7a1fd0ffc" SourceId="1" SourceUrl="http://localhost:5729/EmployeeNew.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
