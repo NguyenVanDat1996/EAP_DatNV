@@ -1,0 +1,127 @@
+﻿@model IEnumerable<WebASM.ServiceReference1.GiaoDich>
+@using WebASM.ServiceReference1
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>History</title>
+</head>
+<body>
+<h1>Lich su khach hang</h1>
+    <table  border="1">
+        <tr>
+            <th>
+                Mã Giao Dịch
+            </th>
+            <th>
+                Tên Giao Dịch
+            </th>
+            <th>
+                Mã Đối Tác
+            </th>
+            <th>
+                Mã Khách Hàng
+            </th>
+            <th>
+                Số Tiền
+            </th>
+            <th>
+                Phí Giao Dịch
+            </th>
+            <th>
+                Thời Gian
+            </th>
+        </tr>
+    
+    @foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.MaGD)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TenGD)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MaDT)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MaKH)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SoTien)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PhiGD)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ThoiGian)
+            </td>
+            
+        </tr>
+    }
+    
+    </table>
+
+
+    <h1>Lich su doi tac</h1>
+    <table border="1">
+        <tr>
+            <th>
+                Mã Giao Dịch
+            </th>
+            <th>
+                Tên Giao Dịch
+            </th>
+            <th>
+                Mã Đối Tác 
+            </th>
+            <th>
+               Mã Khách Hàng
+            </th>
+            <th>
+               Số Tiền
+            </th>
+            <th>
+               Phí Giao Dịch
+            </th>
+            <th>
+                Thời Gian
+            </th>
+            
+        </tr>
+
+        @foreach (GiaoDich item in (List<GiaoDich>)ViewBag.LSDT)
+        {
+            <tr>
+                <td>
+                    @item.MaGD
+                </td>
+                <td>
+                    @item.TenGD
+                </td>
+                <td>
+                    @item.MaDT
+                </td>
+                <td>
+                    @item.MaKH
+                </td>
+                <td>
+                    @item.SoTien
+                </td>
+                <td>
+                    @item.PhiGD
+                </td>
+                <td>
+                    @item.ThoiGian
+                </td>
+            </tr>
+        }
+
+    </table>
+</body>
+</html>
